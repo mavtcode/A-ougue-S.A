@@ -1,1 +1,33 @@
+Algoritmo "Cálculo de desconto"
+// Disciplina  :  [Algoritmos Computacionais]
+// Autor(a)    : Marcos Antonio
+// Data atual  : 15/05/2020
+Var
+// a - valor da compra
+// b - valor pago
 
+a, b :real
+
+Inicio
+
+escreva ("valor de sua compra   " )
+        leia (a)
+escreva ("valor pago   " )
+        leia (b)
+        
+se (a) <500 entao
+escreva ("valor liquido a pagar   ", (a))
+escreva ("você nao tem desconto, seu troco é   ", (b)-(a))
+fimse
+
+se ((a) >=500) e ((a) <=999) entao
+escreva ("você recebeu 5% de desconto, seu troco é   ", ((((a)*5)/100)-(a))+(b))
+escreva ("valor liquido a pagar   ", (a)-(((a)*5)/100))
+fimse
+
+se (a) >1000 entao
+escreva ("você recebeu 10% de desconto, seu troco é   ", ((((a)*10)/100)-(a))+(b))
+escreva ("valor liquido a pagar   ", (a)-(((a)*10)/100))
+fimse
+
+Fimalgoritmo
